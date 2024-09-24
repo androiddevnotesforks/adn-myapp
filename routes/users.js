@@ -27,4 +27,18 @@ router.get('/dictionary/:word', function(req, res, next) {
   }
 });
 
+/* GET dictionary terms by tag */
+router.get('/dictionary/tag/:tag', function(req, res, next) {
+  const tag = req.params.tag.toLowerCase();
+  const matchingTerms = Object.values(dictionary).filter(term => 
+    term.tags.some(t => t.toLowerCase() === tag)
+  );
+  
+  if (matchingTerms.length > 0) {
+    res.json(matchingTerms);
+  } else {
+    res.status(404).json({ error: 'No terms found with this tag' });
+  }
+});
+
 module.exports = router;
