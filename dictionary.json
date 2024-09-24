@@ -1,5 +1,15 @@
 [
   { "word": "apple", "definition": "A round fruit with red or green skin and white flesh" },
   { "word": "book", "definition": "A written or printed work consisting of pages glued or sewn together along one side" },
-  { "word": "computer", "definition": "An electronic device for storing and processing data" }
+  { "word": "computer", "definition": "An electronic device for storing and processing data" },
+  { "word": "algorithm", "definition": "A step-by-step procedure or formula for solving a problem" },
+  { "word": "variable", "definition": "A storage location paired with an associated symbolic name in programming" },
+  { "word": "function", "definition": "A block of organized, reusable code that performs a specific task" },
+  { "word": "database", "definition": "An organized collection of data stored and accessed electronically" },
+  { "word": "API", "definition": "Application Programming Interface; a set of protocols and tools for building software applications" },
+  { "word": "framework", "definition": "A platform for developing software applications that provides a foundation on which software developers can build programs" },
+  { "word": "debugging", "definition": "The process of identifying and removing errors from computer hardware or software" },
+  { "word": "Git", "definition": "A distributed version control system for tracking changes in source code during software development" },
+  { "word": "JavaScript", "definition": "A high-level, interpreted programming language that conforms to the ECMAScript specification" },
+  { "word": "Python", "definition": "An interpreted, high-level, general-purpose programming language" }
 ]
