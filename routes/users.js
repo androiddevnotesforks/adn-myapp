@@ -12,9 +12,19 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
-/* GET dictionary terms */
+/* GET all dictionary terms */
 router.get('/dictionary', function(req, res, next) {
-  res.json(dictionary);
+  res.json(Object.values(dictionary));
+});
+
+/* GET specific dictionary term */
+router.get('/dictionary/:word', function(req, res, next) {
+  const word = req.params.word.toLowerCase();
+  if (dictionary[word]) {
+    res.json(dictionary[word]);
+  } else {
+    res.status(404).json({ error: 'Word not found' });
+  }
 });
 
 module.exports = router;

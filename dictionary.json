@@ -1,15 +1,72 @@
-[
-  { "word": "apple", "definition": "A round fruit with red or green skin and white flesh" },
-  { "word": "book", "definition": "A written or printed work consisting of pages glued or sewn together along one side" },
-  { "word": "computer", "definition": "An electronic device for storing and processing data" },
-  { "word": "algorithm", "definition": "A step-by-step procedure or formula for solving a problem" },
-  { "word": "variable", "definition": "A storage location paired with an associated symbolic name in programming" },
-  { "word": "function", "definition": "A block of organized, reusable code that performs a specific task" },
-  { "word": "database", "definition": "An organized collection of data stored and accessed electronically" },
-  { "word": "API", "definition": "Application Programming Interface; a set of protocols and tools for building software applications" },
-  { "word": "framework", "definition": "A platform for developing software applications that provides a foundation on which software developers can build programs" },
-  { "word": "debugging", "definition": "The process of identifying and removing errors from computer hardware or software" },
-  { "word": "Git", "definition": "A distributed version control system for tracking changes in source code during software development" },
-  { "word": "JavaScript", "definition": "A high-level, interpreted programming language that conforms to the ECMAScript specification" },
-  { "word": "Python", "definition": "An interpreted, high-level, general-purpose programming language" }
-]
+{
+  "algorithm": {
+    "word": "algorithm",
+    "partOfSpeech": "noun",
+    "definition": "A step-by-step procedure or formula for solving a problem or accomplishing a task",
+    "example": "Quicksort is an efficient sorting algorithm.",
+    "etymology": "Mid 18th century: via French from Latin algorismus, from Arabic al-Khwārizmī 'the man of Khwārizm' (the mathematician Muhammad ibn Mūsa al-Khwārizmī)"
+  },
+  "API": {
+    "word": "API",
+    "partOfSpeech": "noun",
+    "definition": "Application Programming Interface; a set of protocols and tools for building software applications",
+    "example": "The company released a new API for developers to integrate their service.",
+    "etymology": "1960s: acronym from Application Programming Interface"
+  },
+  "JavaScript": {
+    "word": "JavaScript",
+    "partOfSpeech": "noun",
+    "definition": "A high-level, interpreted programming language that conforms to the ECMAScript specification",
+    "example": "She used JavaScript to add interactivity to the website.",
+    "etymology": "1990s: named after the Java programming language, with which it shares some syntax"
+  },
+  "Python": {
+    "word": "Python",
+    "partOfSpeech": "noun",
+    "definition": "A high-level, interpreted programming language known for its readability and versatility",
+    "example": "Python is widely used in data science and machine learning.",
+    "etymology": "Named after Monty Python's Flying Circus, a British comedy series"
+  },
+  "database": {
+    "word": "database",
+    "partOfSpeech": "noun",
+    "definition": "A structured set of data held in a computer, especially one that is accessible in various ways",
+    "example": "They store customer information in a relational database.",
+    "etymology": "1960s: from data + base"
+  },
+  "Git": {
+    "word": "Git",
+    "partOfSpeech": "noun",
+    "definition": "A distributed version control system for tracking changes in source code during software development",
+    "example": "The team uses Git for collaboration and version control.",
+    "etymology": "Created by Linus Torvalds in 2005, named as British slang for 'unpleasant person'"
+  },
+  "framework": {
+    "word": "framework",
+    "partOfSpeech": "noun",
+    "definition": "A basic structure underlying a system, concept, or text in software development",
+    "example": "React is a popular JavaScript framework for building user interfaces.",
+    "etymology": "Late 16th century: from French, from Old French frameweorc"
+  },
+  "compiler": {
+    "word": "compiler",
+    "partOfSpeech": "noun",
+    "definition": "A program that converts instructions into a machine-code or lower-level form so that they can be read and executed by a computer",
+    "example": "The C++ compiler translates source code into executable machine code.",
+    "etymology": "1950s: from compile + -er"
+  },
+  "debugging": {
+    "word": "debugging",
+    "partOfSpeech": "noun",
+    "definition": "The process of identifying and removing errors from computer hardware or software",
+    "example": "Debugging is an essential skill for any programmer.",
+    "etymology": "1940s: from de- (expressing removal) + bug 'fault in a machine'"
+  },
+  "agile": {
+    "word": "agile",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to or denoting a method of project management characterized by the division of tasks into short phases of work and frequent reassessment and adaptation of plans",
+    "example": "Many software development teams use agile methodologies.",
+    "etymology": "Late Middle English: from French agile, from Latin agilis, from agere 'do, act'"
+  }
+}
