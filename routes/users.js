@@ -1,12 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var path = require('path');
+var fs = require('fs');
 
-// Mock dictionary data (replace this with a real database in production)
-const dictionary = [
-  { word: 'apple', definition: 'A round fruit with red or green skin and white flesh' },
-  { word: 'book', definition: 'A written or printed work consisting of pages glued or sewn together along one side' },
-  { word: 'computer', definition: 'An electronic device for storing and processing data' },
-];
+// Read dictionary data from JSON file
+const dictionaryPath = path.join(__dirname, '..', 'dictionary.json');
+const dictionary = JSON.parse(fs.readFileSync(dictionaryPath, 'utf8'));
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
