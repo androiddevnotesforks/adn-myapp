@@ -26,9 +26,35 @@ router.get('/', (req, res) => {
   res.send('respond with a resource');
 });
 
-/* GET all dictionary terms */
+/* GET all dictionary terms with pagination */
 router.get('/dictionary', (req, res) => {
-  res.json(Object.values(dictionary));
+  const page = parseInt(req.query.page) || 1;
+  const limit = parseInt(req.query.limit) || 10;
+  const startIndex = (page - 1) * limit;
+  const endIndex = page * limit;
+
+  const results = {};
+  const totalItems = Object.keys(dictionary).length;
+
+  if (endIndex < totalItems) {
+    results.next = {
+      page: page + 1,
+      limit: limit
+    };
+  }
+
+  if (startIndex > 0) {
+    results.previous = {
+      page: page - 1,
+      limit: limit
+    };
+  }
+
+  results.totalPages = Math.ceil(totalItems / limit);
+  results.currentPage = page;
+  results.items = Object.values(dictionary).slice(startIndex, endIndex);
+
+  res.json(results);
 });
 
 /* GET dictionary terms by tag */
